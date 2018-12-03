@@ -13,6 +13,7 @@
   "author": "mobilisf",
   "license": "ISC",
   "dependencies": {
+    "bower": "^1.8.4",
     "gulp": "^3.9.1"
   },
   "bugs": {
