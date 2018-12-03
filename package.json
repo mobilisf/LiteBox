@@ -1,0 +1,22 @@
+{
+  "name": "astrio",
+  "version": "1.0.0",
+  "description": "For astrio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobilisf/magento.git"
+  },
+  "author": "mobilisf",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "bugs": {
+    "url": "https://github.com/mobilisf/magento/issues"
+  },
+  "homepage": "https://github.com/mobilisf/magento#readme"
+}
