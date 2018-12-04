@@ -1,6 +1,6 @@
 {
-  "name": "astrio",
-  "description": "For astrio",
+  "name": "LightBox",
+  "description": "Application form for LightBox",
   "main": "index.js",
   "authors": [
     "mobilisf"

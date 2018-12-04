@@ -1,7 +1,7 @@
 {
-  "name": "astrio",
+  "name": "LightBox",
   "version": "1.0.0",
-  "description": "For astrio",
+  "description": "Application form for LightBox",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
