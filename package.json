@@ -1,7 +1,7 @@
 {
-  "name": "LightBox",
+  "name": "LiteBox",
   "version": "1.0.0",
-  "description": "Application form for LightBox",
+  "description": "Application form for LiteBox",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

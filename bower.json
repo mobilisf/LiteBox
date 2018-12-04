@@ -1,6 +1,6 @@
 {
-  "name": "LightBox",
-  "description": "Application form for LightBox",
+  "name": "LiteBox",
+  "description": "Application form for LiteBox",
   "main": "index.js",
   "authors": [
     "mobilisf"
