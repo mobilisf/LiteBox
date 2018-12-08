@@ -1,0 +1,21 @@
+{
+  "name": "LiteBox",
+  "description": "Application form for LiteBox",
+  "main": "index.js",
+  "authors": [
+    "mobilisf"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mobilisf/magento",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.*"
+  }
+}
