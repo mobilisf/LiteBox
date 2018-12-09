@@ -1,0 +1,115 @@
+@import "partials/variables.scss";
+
+$header-background-color: $color-dark-blue;
+$header-font-color: $color-white;
+
+.header-wrap {
+    width: 100%;
+    height: auto;
+    background-color: $header-background-color;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 812px;
+    height: auto;
+    margin: 30px auto 0 auto;
+    padding: 45px 0;
+    color: $header-font-color;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 132px;
+    }
+
+    &__content-avatar {
+        width: 132px;
+        height: 132px;
+        margin-right: 27px;
+
+        .avatar-image {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    }
+
+    &__content-name {
+        font-family: Montserrat;
+        font-size: 37px;
+        font-weight: 700;
+        letter-spacing: 4px;
+    }
+
+    &__content-speciality {
+        font-family: "Open Sans - Semibold";
+        font-size: 21px; 
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 146px;
+        font-family: "Open Sans";
+        font-size: 17px;
+    }
+
+    &__contacts-location {
+        display: inline-flex;
+        align-items: center;
+
+        .location-icon {
+            margin-right: 15px;
+        }
+
+        .location-text {
+            margin: 0;
+        }
+
+        .ymaps-2-1-71-geolink-processed:before {
+            content: none;
+        }
+
+        .ymaps-2-1-71-geolink-processed {
+            margin-left: 0;
+        }
+    }
+
+    &__contacts-mail {
+        display: flex;
+        align-items: center;
+
+        .mail-icon {
+            margin-right: 15px;
+        }
+
+        .mail-text {
+            margin: 0;
+        }
+    }
+
+    &__contacts-phone {
+        display: flex;
+        align-items: center;
+
+        .phone-icon {
+            margin-right: 15px;
+        }
+
+        .phone-text {
+            margin: 0;
+        }
+
+        .phone-text a {
+            color: $header-font-color;
+            border-bottom: 1px dashed;
+            text-decoration: unset;
+        }
+    }
+}
+

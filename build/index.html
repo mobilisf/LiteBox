@@ -2,14 +2,48 @@
 <html>
 <head lang="eng">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Application form for LightBox</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU&load=Geolink"></script>
 </head>
     <body>
-        <div class="form-header">
-            <section class="header">
-            Header
-            </section>
+        <div class="form-wrapper">
+            <div class="form-header">
+                <section class="header-wrap">
+                    <div class="header">
+                        <div class="header__content">
+                            <div class="header__content-avatar">
+                                <img src="images/header/avatar.jpg" alt="" class="avatar-image">
+                            </div>
+                            <div class="header__content-title">
+                                <div class="header__content-name">Nikita Kalachev</div>
+                                <div class="header__content-speciality">Frontend Developer</div>
+                            </div>
+                        </div>
+                        <div class="header__contacts">
+                            <div class="header__contacts-location">
+                                <img class="location-icon" src="images/header/location.png" alt="location icon">
+                                <p class="location-text ymaps-geolink" data-bounds="[[54.314214, 48.402297], [54.314483, 48.402568]]" data-description="Suppose I live here :)"  data-type="biz">Ulyanovsk, Russia</p>
+                            </div>
+                            <div class="header__contacts-mail">
+                                <img class="mail-icon" src="images/header/www.png" alt="mail icon">
+                                <p class="mail-text"><a target="_top" href="mailto:nikitakalachev@gmail.?Subject=Hello"></a>nikitakalachev18@gmail.com</a></p>
+                            </div>
+                            <div class="header__contacts-phone">
+                                <img class="phone-icon" src="images/header/phone.png" alt="phone icon">
+                                <p class="phone-text"><a href="tel: +79969532147">+7 996 953 21 47</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="">
+                </div>
+            </div>
             <div class="form-content">
                 <section class="left-side">
                 Left-side
