@@ -53,7 +53,6 @@ $color-font-position: $color-light-gray;
 }
 
 .reference-item__content {
-    position: relative;
     margin-left: 30px;
 }
 
@@ -70,6 +69,10 @@ $color-font-position: $color-light-gray;
 .reference-item__position {
     margin: 10px 0;
     color: $color-font-position;
+}
+
+.left__awards-content {
+    font-weight: 600;
 }
 
 @media (max-width: 940px) {
