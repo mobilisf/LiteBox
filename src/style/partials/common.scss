@@ -1,6 +1,23 @@
-// .form-wrapper {
-//     max-width: 812px;
-//     height: auto;
-//     margin: 30px auto 0 auto;
-//     background: lightseagreen;
-// }
+.header-wrap {  grid-area: header; }
+.left-side { grid-area: left }
+.right-side { grid-area: right }
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 324px 636px;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "header header"
+        "left right";
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.left-side {
+    background: lightgray;
+}
+
+.right-side {
+    background: gray;
+}
