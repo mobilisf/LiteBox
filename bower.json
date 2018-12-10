@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "3.*"
+    "normalize.css": "*",
+    "jquery": "3.*",
+    "normalize-css": "^8.0.1"
   }
 }
