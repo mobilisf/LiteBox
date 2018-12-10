@@ -81,6 +81,16 @@ $color-font-position: $color-light-gray;
     }
 }
 
+@media (max-width: 770px) {
+    .left__interests-content {
+        justify-content: flex-start;
+    }
+
+    .left__interests-content div{
+        margin-right: 15px;
+    }
+}
+
 @media (max-width: 450px) {
     .left-side {
         padding: 10px 10px;

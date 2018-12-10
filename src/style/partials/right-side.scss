@@ -41,7 +41,7 @@ $color-circle: $color-dark-blue;
 .right__work-content .work-item,
 .right__education-content .education-item {
     display: grid;
-    grid-template-columns: 1fr 5fr minmax(auto, 265px);
+    grid-template-columns: 1fr minmax(150px, 10fr) minmax(auto, 265px);
     column-gap: 10px;
     margin: 21px 0;
 }
@@ -49,6 +49,7 @@ $color-circle: $color-dark-blue;
 .right__skills-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .right__skills-content .skills-item {
@@ -141,22 +142,35 @@ linear-gradient(90deg, transparent 50%, $color-circle 50%);
     color: $color-font-position;
 }
 
-
+.item--rightbar p {
+    margin: 10px 0;
+}
 
 .skills-item__subtitle-text {
     font-size: 17px;
     font-weight: 600;
 }
 
-
-
-
-
-
-
 @media (max-width: 940px) {
     .right-side {
         padding: 30px 15px;
+    }
+}
+
+@media (max-width: 770px) {
+    .right__education-content,
+    .right__skills-content,
+    .right__work-content {
+        margin-left: 0;
+    }
+
+    .right__education-content .education-item,
+    .right__work-content .work-item {
+        grid-template-columns: 1fr minmax(150px, auto) 24fr;
+    }
+
+    .right__skills-content .skills-item {
+        margin: 0 15px 15px 0;
     }
 }
 
