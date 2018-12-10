@@ -1,23 +1,69 @@
+@import "partials/variables.scss";
+
+$color-form-circle: $color-light-gray;
+
 .header-wrap {  grid-area: header; }
 .left-side { grid-area: left }
 .right-side { grid-area: right }
 
 .form-wrapper {
     display: grid;
-    grid-template-columns: 324px 636px;
-    grid-template-rows: auto auto;
+    grid-template-columns: minmax(auto, 324px) minmax(auto, 636px);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: 
         "header header"
         "left right";
+    column-gap: 10px;
     max-width: 960px;
     height: auto;
     margin: 0 auto;
 }
 
-.left-side {
-    background: lightgray;
+.form-item__box {
+    margin: 30px 0;
 }
 
+.form-text__title {
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 24px;
+}
+
+.form-text__content {
+    font-family: "Open Sans";
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.form-shape__circle {
+    width: 14px;
+    height: 14px;
+    border: 2px solid $color-form-circle;
+    border-radius: 50%;
+}
+
+.form-shape__circle:after {
+    content: "";
+    display: block;
+    position: relative;
+    border-right: 2px solid $color-form-circle;
+    width: 0;
+    height: 99px;
+    top: 16px;
+    left: 6px;
+  }
+
+.reference-item:last-child .form-shape__circle:after {
+      content: none;
+  }
+
+
+
+
+
+
 .right-side {
+
     background: gray;
 }
