@@ -3,44 +3,46 @@
 $color-font-time: $color-light-gray;
 $color-font-name: $color-blue;
 $color-font-position: $color-light-gray;
+$color-interests-item: $color-blue;
 
 .left-side {
     padding: 15px 10px 30px 75px;
     font-family: "Open Sans";
 }
 
-.left__profile-title .form-text__title:before {
-    content: url('../images/content_icons/bag-one.png');
-    margin-right: 20px;
-}
-
-.left__interests-title .form-text__title:before {
-    content: url('../images/content_icons/bag-one.png');
-    margin-right: 20px;
-}
-
-.left__reference-title .form-text__title:before {
-    content: url('../images/content_icons/bag-one.png');
-    margin-right: 20px;
-}
-
-.left__awards-title .form-text__title:before {
-    content: url('../images/content_icons/bag-one.png');
-    margin-right: 20px;
+.left__interests-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
 }
 
 .left__interests-content {
     display: flex;
     justify-content: space-between;
+}
 
-    .music-text,
-    .gaming-text,
-    .biking-text {
-        margin: 10px 0;
-        font-family: "Open Sans - Semibold";
-        font-size: 17px;
-        font-weight: 600;
-    }
+.interests-content__text {
+    margin: 20px 0 10px 0;
+    font-family: "Open Sans - Semibold";
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.interests__contacts-icon {
+    width: 42px;
+    height: 42px;
+    overflow: visible;
+    fill: $color-interests-item;
+}
+
+#sprite-circle {
+    fill:transparent; 
+    stroke: #344eff;
+    stroke-width: 2;
+    cx: 21;
+    cy: 21;
+    r: 30;
 }
 
 .reference-item {
@@ -75,6 +77,10 @@ $color-font-position: $color-light-gray;
     font-weight: 600;
 }
 
+.left__awards-item a {
+    color: $color-font-name;
+}
+
 @media (max-width: 940px) {
     .left-side {
         padding: 30px 15px;
@@ -84,15 +90,24 @@ $color-font-position: $color-light-gray;
 @media (max-width: 770px) {
     .left__interests-content {
         justify-content: flex-start;
+        flex-wrap: wrap;
     }
 
-    .left__interests-content div{
-        margin-right: 15px;
+    .left__interests-item {
+        margin-top: 20px;
+    }
+
+    .left-side {
+        padding: 30px 15px 0 15px;
     }
 }
 
 @media (max-width: 450px) {
     .left-side {
         padding: 10px 10px;
+    }
+
+    .reference-item__content {
+        margin-left: 0;
     }
 }
