@@ -8,6 +8,11 @@ $header-font-hover-color: $color-red;
     width: 100%;
     height: auto;
     background-color: $header-background-color;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)),
+    url(../images/header/background.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .header {
@@ -34,12 +39,12 @@ $header-font-hover-color: $color-red;
         width: 132px;
         height: 132px;
         margin-right: 27px;
+    }
 
-        .avatar-image {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
+    &__content-avatar-img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
     }
 
     &__content-name {
@@ -54,8 +59,9 @@ $header-font-hover-color: $color-red;
     }
 
     &__content-speciality {
-        font-family: "Open Sans - Semibold";
-        font-size: 21px; 
+        font-family: "Open Sans";
+        font-size: 21px;
+        font-weight: 600; 
     }
 
     &__contacts {
@@ -68,17 +74,13 @@ $header-font-hover-color: $color-red;
         font-size: 17px;
     }
 
+    &__contacts-icon {
+        margin-right: 15px; 
+    }
+
     &__contacts-location {
         display: inline-flex;
         align-items: center;
-
-        .location-icon {
-            margin-right: 15px;
-        }
-
-        .location-text {
-            margin: 0;
-        }
 
         .ymaps-2-1-71-geolink-processed:before {
             content: none;
@@ -96,39 +98,42 @@ $header-font-hover-color: $color-red;
     &__contacts-mail {
         display: flex;
         align-items: center;
-
-        .mail-icon {
-            margin-right: 15px;
-        }
-
-        .mail-text {
-            margin: 0;
-        }
     }
 
     &__contacts-phone {
         display: flex;
         align-items: center;
-
-        .phone-icon {
-            margin-right: 15px;
-        }
-
-        .phone-text {
-            margin: 0;
-        }
-
-        .phone-text a {
-            color: $header-font-color;
-            border-bottom: 1px dashed;
-            text-decoration: unset;
-        }
-
-        .phone-text a:hover {
-            color: $header-font-hover-color;
-            border-bottom: none;
-        }
     }
+}
+
+.contacts-phone__text a {
+    color: $header-font-color;
+    border-bottom: 1px dashed $header-font-color;
+    text-decoration: unset;
+}
+
+.contacts-phone__text a:hover {
+    color: $header-font-hover-color;
+    border-bottom: none;
+}
+
+.contacts-mail__text {
+    font-style: normal;
+}
+
+.contacts-location__icon {
+    width: 10px;
+    height: 15px;
+}
+
+.contacts-mail__icon {
+    width: 13px;
+    height: 13px;
+}
+
+.contacts-phone__icon {
+    width: 10px;
+    height: 13px;
 }
 
 @media (max-width: 940px) {
@@ -150,3 +155,4 @@ $header-font-hover-color: $color-red;
         margin: 10px 0 0 0;
     }
 }
+

@@ -2,13 +2,17 @@
 
 $color-form-circle: $color-light-gray;
 
+h1, h2, p {
+    margin: 0;
+}
+
 .header-wrap {  grid-area: header; }
 .left-side { grid-area: left }
 .right-side { grid-area: right }
 
-.form-wrapper {
+.form {
     display: grid;
-    grid-template-columns: minmax(auto, 324px) minmax(auto, 636px);
+    grid-template-columns: auto-fit(minmax(auto, 324px)) auto-fit(minmax(auto, 636px));
     grid-template-rows: repeat(2, auto);
     grid-template-areas: 
         "header header"
@@ -26,6 +30,7 @@ $color-form-circle: $color-light-gray;
 .form-text__title {
     display: flex;
     align-items: center;
+    margin-bottom: 17px;
     font-family: Montserrat;
     font-size: 24px;
 }
@@ -44,16 +49,20 @@ $color-form-circle: $color-light-gray;
     border-radius: 50%;
 }
 
-// .form-shape__circle:after {
-//     content: "";
-//     display: block;
-//     position: relative;
-//     border-right: 2px solid $color-form-circle;
-//     width: 0;
-//     height: 99px;
-//     top: 16px;
-//     left: 6px;
-//   }
+.form-shape__circle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-right: 2px solid #404545;
+    width: 0;
+    height: 48%;
+    top: 26%;
+    left: 8px;
+  }
+
+.left__reference-content {
+    position: relative;
+}
 
 .reference-item:last-child .form-shape__circle:after,
 .work-item:last-child .form-shape__circle:after,
@@ -62,7 +71,7 @@ $color-form-circle: $color-light-gray;
 }
 
 @media (max-width: 770px) {
-    .form-wrapper {
+    .form {
         grid-template-columns: minmax(auto, 778px);
         grid-template-rows: repeat(3, auto);
         grid-template-areas: 
